@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { MatButtonModule } from '@angular/material/button';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginModule, LoginRoutingModule, CadastroPjModule, CadastroPjRoutingModule } from './autenticacao';
-
+import { LoginModule, LoginRoutingModule,
+  CadastroPjModule, CadastroPjRoutingModule,
+  CadastroPfModule } from './autenticacao';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { LoginModule, LoginRoutingModule, CadastroPjModule, CadastroPjRoutingMod
     LoginRoutingModule,
     CadastroPjModule,
     CadastroPjRoutingModule,
+    CadastroPfModule,
     AppRoutingModule
   ],
   providers: [],

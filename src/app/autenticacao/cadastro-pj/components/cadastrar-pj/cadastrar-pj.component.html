@@ -1,5 +1,4 @@
-<h2>Cadastro de Pessoa Jurídica</h2>
-<form [formGroup]="form" novalidate>
+<form [formGroup]="form" fxLayoutAlign="center" novalidate>
   <mat-list>
   	<mat-list-item>
   	  <mat-form-field>
@@ -40,7 +39,7 @@
 	    <mat-icon>help</mat-icon>
 	  </span>
 	</mat-list-item>
-    <mat-list-item>
+    <mat-list-item fxLayoutAlign="center">
 	  <button mat-raised-button color="primary"
 	  	[disabled]="form.invalid" (click)="cadastrarPj()">
 	  	Cadastrar
