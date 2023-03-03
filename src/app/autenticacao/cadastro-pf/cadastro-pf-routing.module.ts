@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { CadastroPfComponent, CadastrarPfComponent } from './components';
+import { 
+	CadastroPfComponent, 
+	CadastrarPfComponent 
+} from './components';
 
 export const CadastroPfRoutes: Routes = [
 	{
@@ -9,8 +12,8 @@ export const CadastroPfRoutes: Routes = [
 		component: CadastroPfComponent,
 		children: [
 		  {
-			path: '',
-			component: CadastrarPfComponent
+			path: '', 
+			component: CadastrarPfComponent 
 		  }
 		]
 	}

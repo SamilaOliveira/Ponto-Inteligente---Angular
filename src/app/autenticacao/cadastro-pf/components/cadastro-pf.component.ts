@@ -1,11 +1,10 @@
-import { Component } from "@angular/core";
-import { CadastroPfRoutingModule } from "../cadastro-pf-routing.module";
+import { Component } from '@angular/core';
 
 @Component({
   template: `
-    <h2>Cadastro de Pessoa Física</h2>
-    <router-outlet></router-outlet>
+  	<h2 fxLayoutAlign="center">Cadastro de Pessoa Física</h2>
+  	<router-outlet></router-outlet>
   `
 })
-export class CadastroPfComponent{
+export class CadastroPfComponent {
 }
