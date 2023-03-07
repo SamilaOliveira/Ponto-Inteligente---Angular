@@ -1,17 +1,19 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Login } from '../';
-import { EnvironmentInjector as env } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { environment as env } from '../../../../environments/environment';
 
-@Injectable({
-  providedIn: 'root',
-})
+import { Login } from '../';
+
+@Injectable()
 export class LoginService {
+
   private readonly PATH: string = 'auth';
-  constructor(private httpClient: HttpClient) {}
+
+  constructor(private http: HttpClient) { }
 
   logar(login: Login): Observable<any> {
-   return this.httpClient.post(this.PATH, login);
+ 	return this.http.post(env.baseUrl + this.PATH, login);
   }
+
 }

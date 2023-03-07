@@ -1,6 +1,7 @@
-import { EnvironmentInjector as env, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { environment as env } from '../../../../environments/environment';
 
 import { CadastroPj } from '../';
 
@@ -12,7 +13,7 @@ export class CadastrarPjService {
   constructor(private http: HttpClient) { }
 
   cadastrar(cadastroPj: CadastroPj): Observable<any> {
-  	  return this.http.post(env + this.PATH, cadastroPj);
+  	  return this.http.post(env.baseApiUrl + this.PATH, cadastroPj);
   }
 
 }

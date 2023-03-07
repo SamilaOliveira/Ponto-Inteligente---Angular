@@ -9,7 +9,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { CadastrarPjComponent, CadastroPjComponent } from './components';
+
+import {
+	CadastrarPjComponent,
+	CadastroPjComponent
+} from './components';
 import { CadastrarPjService } from './services';
 
 import { SharedModule } from '../../shared/shared.module';

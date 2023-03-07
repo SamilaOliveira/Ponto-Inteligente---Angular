@@ -1,15 +1,14 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { MatButtonModule } from '@angular/material/button';
-import { FuncionarioModule } from './funcionario';
+import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginModule, LoginRoutingModule,
-  CadastroPjModule, CadastroPjRoutingModule,
-  CadastroPfModule } from './autenticacao';
-import { FuncionarioRoutingModule } from './funcionario/components/funcionario-routing.module';
-
+import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { AppComponent } from './app.component';
+import { LoginModule, LoginRoutingModule, CadastroPjModule, CadastroPjRoutingModule,
+         CadastroPfModule, CadastroPfRoutingModule } from './autenticacao';
+import { AppRoutingModule } from './app-routing.module';
+import { FuncionarioModule, FuncionarioRoutingModule } from './funcionario';
+import { AdminModule, AdminRoutingModule } from './admin';
 
 @NgModule({
   declarations: [
@@ -18,14 +17,19 @@ import { FuncionarioRoutingModule } from './funcionario/components/funcionario-r
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
     LoginModule,
     LoginRoutingModule,
     CadastroPjModule,
     CadastroPjRoutingModule,
     CadastroPfModule,
+    CadastroPfRoutingModule,
     FuncionarioModule,
     FuncionarioRoutingModule,
+    AdminModule,
+    AdminRoutingModule,
+
     AppRoutingModule
   ],
   providers: [],

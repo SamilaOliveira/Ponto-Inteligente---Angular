@@ -1,4 +1,4 @@
-<form [formGroup]="form" novalidate>
+<form [formGroup]="form"  novalidate>
   <mat-list>
   	<mat-list-item>
   	  <mat-form-field>
@@ -39,7 +39,7 @@
 	    <mat-icon>help</mat-icon>
 	  </span>
 	</mat-list-item>
-    <mat-list-item fxLayoutAlign="center">
+    <mat-list-item>
 	  <button mat-raised-button color="primary"
 	  	[disabled]="form.invalid" (click)="cadastrarPj()">
 	  	Cadastrar
